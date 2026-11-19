@@ -1,0 +1,4 @@
+Cenario,Custo FN,Custo FP,Threshold*,"Custo @0,5",Custo @otimo,Economia
+Linha critica (FN muito caro),100000.0,500.0,0.007,4600000.0,1710500.0,2889500.0
+Base (premissa do relatorio),50000.0,500.0,0.026000000000000002,2300000.0,1089500.0,1210500.0
+Inspecao cara (FP caro),20000.0,2000.0,0.064,920000.0,532000.0,388000.0
