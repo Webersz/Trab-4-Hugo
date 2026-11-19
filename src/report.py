@@ -28,6 +28,8 @@ def build_pdf(table, sc, info, path):
     n = f"{info['n']:,}".replace(",", ".")
     add(Paragraph("Avaliação de Métricas em Modelos de Classificação Desbalanceados", ss["Title"]))
     add(Paragraph("Relatório Executivo - Engenharia de Dados e MLOps - UniSENAI", ss["Heading4"]))
+    add(Paragraph('Repositório Git: <link href="https://github.com/Webersz/Trab-4-Hugo" color="blue">'
+                  'https://github.com/Webersz/Trab-4-Hugo</link>', ss["BodyText"]))
     t_star, eco = info["t_star"], info["economia"]
     add(Paragraph(
         f"<b>Resumo:</b> em um conjunto de {n} leituras de sensores com {info['taxa_falha']*100:.2f}% de falhas, "
