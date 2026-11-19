@@ -19,7 +19,7 @@ def plot_cost(curve_te, curve_va, t_star, t_def, path):
     ax.axvline(t_star, color="#27ae60", ls=":"); ax.scatter([t_star], [c_opt], color="#27ae60", zorder=5,
         label=f"Otimo {t_star:.3f}: R$ {c_opt*1e3:,.0f}")
     ax.set_xlabel("Threshold de decisao"); ax.set_ylabel("Custo total (R$ mil)")
-    ax.set_title("Custo total vs. threshold (FN = R\$ 50.000 | FP = R\$ 500)")
+    ax.set_title(r"Custo total vs. threshold (FN = R\$ 50.000 | FP = R\$ 500)")
     ax.legend(); ax.grid(alpha=.3); fig.tight_layout(); fig.savefig(path, dpi=150); plt.close(fig)
 
 
